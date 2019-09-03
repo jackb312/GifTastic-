@@ -9,26 +9,33 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <div id="buttons"></div><br>
     <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Animal Gifs!</h1>
+        </div>
         <div class="row">
             <div class="col-9">
-                <div id="gifs-area">
-                </div>
-            </div> 
-            <div class="col-3"> 
-                <div class="form-group">
-                <label for="addGifs">Add a gif</label>
-                <input type="text" class="form-control" id="addgifs">
-                <button type="submit" class="btn btn-primary" id="gifAdder">Submit</button>
-                </div>
+            <div id="animal-buttons"></div>   
+            </div>     
+            <div class="col-3">
+                <form id="form">
+                    <label for="animal-input">Add an animal</label><br>
+                    <input type="text" id="animal-input">
+                    <input id="add-animal" type="submit" value="Submit" class="btn btn-default">
+                </form>
                 <div id="logo">
                     <img src="assets/images/Poweredby_100px-White_VertLogo.png">
                 </div>
-            </div>
+            </div>     
         </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="animal-images"></div>
+            </div>
+            
+        </div>  
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>  
 </body>
 </html>
